@@ -17,6 +17,9 @@
 <ul>
   <li><%= profile.name %></li>
   <li><%= profile.description %></li>
+  
+  <li><%= image_tag profile.attachment, width:"300px" %></li>
+
   <li><%= link_to "Download picture", profile.attachment_url %></li>
   <li><%= button_to "Delete", profile, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{profile.name}?" %></li>
 
